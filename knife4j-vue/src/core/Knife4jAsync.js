@@ -238,7 +238,7 @@ SwaggerBootstrapUi.prototype.main = function () {
  * 初始化请求参数
  * 开启请求参数缓存：cache=1
  * 菜单Api地址显示: showMenuApi=1
- * 分组tag显示dsecription说明属性: showDes=1
+ * 分组tag显示description说明属性: showDes=1
  * 开启RequestMapping接口过滤,默认只显示: filterApi=1  filterApiType=post
  * 开启缓存已打开的api文档:cacheApi=1
  * 启用SwaggerBootstrapUi提供的增强功能:plus=1
