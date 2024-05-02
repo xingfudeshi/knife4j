@@ -46,10 +46,10 @@
         <knife4j-springfox.version>2.10.5</knife4j-springfox.version>
         <knife4j-spring-plugin.version>2.0.0.RELEASE</knife4j-spring-plugin.version>
 
-        <knife4j-springdoc-openapi.version>1.7.0</knife4j-springdoc-openapi.version>
+        <knife4j-springdoc-openapi.version>1.8.0</knife4j-springdoc-openapi.version>
         <knife4j-swagger-models.version>1.6.6</knife4j-swagger-models.version>
 
-        <knife4j-springdoc-openapi-jakarta.version>2.3.0</knife4j-springdoc-openapi-jakarta.version>
+        <knife4j-springdoc-openapi-jakarta.version>2.5.0</knife4j-springdoc-openapi-jakarta.version>
         <knife4j-swagger-models-v3.version>2.2.19</knife4j-swagger-models-v3.version>
 
         <knife4j-servlet.version>3.1.0</knife4j-servlet.version>
