@@ -1445,11 +1445,8 @@ SwaggerBootstrapUi.prototype.analysisDefinitionAsyncOAS2 = function (menu, swud,
               // 判断是否包含枚举
               if (propobj.hasOwnProperty('enum')) {
                 spropObj.enum = propobj['enum'];
-                if (spropObj.description != '') {
-                  spropObj.description += ',';
-                }
                 //spropObj.description = spropObj.description + '可用值:' + spropObj.enum.join(',');
-                spropObj.description = spropObj.description + KUtils.enumAvalibleLabel(that.i18nInstance, spropObj.enum);
+                spropObj.description = KUtils.enumAvalibleLabel(that.i18nInstance, spropObj.enum, spropObj.description);
               }
               if (spropObj.type == 'string') {
                 // spropObj.example = String(KUtils.propValue('example', propobj, ''));
@@ -1583,11 +1580,8 @@ SwaggerBootstrapUi.prototype.analysisDefinitionAsyncOAS2 = function (menu, swud,
                     }
                     // 判断是否存在枚举
                     if (items.hasOwnProperty('enum')) {
-                      if (spropObj.description != '') {
-                        spropObj.description += ',';
-                      }
                       //spropObj.description = spropObj.description + '可用值:' + items['enum'].join(',');
-                      spropObj.description = spropObj.description + KUtils.enumAvalibleLabel(that.i18nInstance, items['enum']);
+                      spropObj.description = KUtils.enumAvalibleLabel(that.i18nInstance, items['enum'], spropObj.description);
 
                     }
                     var regex = new RegExp(KUtils.oasmodel(oas2), 'ig');
@@ -1738,11 +1732,8 @@ SwaggerBootstrapUi.prototype.analysisDefinitionAsyncOAS3 = function (menu, swud,
               // 判断是否包含枚举
               if (propobj.hasOwnProperty('enum')) {
                 spropObj.enum = propobj['enum'];
-                if (spropObj.description != '') {
-                  spropObj.description += ',';
-                }
                 //spropObj.description = spropObj.description + '可用值:' + spropObj.enum.join(',');
-                spropObj.description = spropObj.description + KUtils.enumAvalibleLabel(that.i18nInstance, spropObj.enum);
+                spropObj.description = KUtils.enumAvalibleLabel(that.i18nInstance, spropObj.enum, spropObj.description);
               }
               if (spropObj.type == 'string') {
                 // spropObj.example = String(KUtils.propValue('example', propobj, ''));
@@ -1896,11 +1887,8 @@ SwaggerBootstrapUi.prototype.analysisDefinitionAsyncOAS3 = function (menu, swud,
                     }
                     // 判断是否存在枚举
                     if (items.hasOwnProperty('enum')) {
-                      if (spropObj.description != '') {
-                        spropObj.description += ',';
-                      }
                       //spropObj.description = spropObj.description + '可用值:' + items['enum'].join(',');
-                      spropObj.description = spropObj.description + KUtils.enumAvalibleLabel(that.i18nInstance, items['enum']);
+                      spropObj.description = KUtils.enumAvalibleLabel(that.i18nInstance, items['enum'], spropObj.description);
                     }
                     var regex = new RegExp(KUtils.oasmodel(oas2), 'ig');
                     if (regex.test(ref)) {
@@ -2194,11 +2182,8 @@ SwaggerBootstrapUi.prototype.analysisDefinitionRefTableModel = function (instanc
                       var description = KUtils.propValue('description', p, '');
                       // 判断是否包含枚举
                       if (p.hasOwnProperty('enum')) {
-                        if (description != '') {
-                          description += ',';
-                        }
                         //description = description + '可用值:' + p.enum.join(',');
-                        description = description + KUtils.enumAvalibleLabel(that.i18nInstance, p.enum);
+                        description = KUtils.enumAvalibleLabel(that.i18nInstance, p.enum, description);
                       }
                       refp.description = KUtils.replaceMultipLineStr(description);
                       //console.log('key:', pkey, ",desc:", KUtils.replaceMultipLineStr(description))
@@ -2307,7 +2292,7 @@ SwaggerBootstrapUi.prototype.analysisDefinitionRefTableModel = function (instanc
                     refp.type = def.type;
                     refp.example = def.example;
                     //description = '可用值:' + def['enum'].join(',');
-                    description = def.description + KUtils.enumAvalibleLabel(that.i18nInstance, def['enum']);
+                    description = KUtils.enumAvalibleLabel(that.i18nInstance, def['enum'], def.description);
                     refp.description = KUtils.replaceMultipLineStr(description);
                     // models添加所有属性
                     originalTreeTableModel.params.push(refp);
@@ -2502,11 +2487,8 @@ function deepSwaggerModelsTreeTableRefParameter(parentRefp, definitions, deepDef
               var description = KUtils.propValue('description', p, '');
               // 判断是否包含枚举
               if (p.hasOwnProperty('enum')) {
-                if (description != '') {
-                  description += ',';
-                }
                 //description = description + '可用值:' + p.enum.join(',');
-                description = description + KUtils.enumAvalibleLabel(that.i18nInstance, p.enum);
+                description = KUtils.enumAvalibleLabel(that.i18nInstance, p.enum, description);
               }
 
               //增加title属性的支持
@@ -5510,13 +5492,7 @@ SwaggerBootstrapUi.prototype.assembleParameter = function (m, swpinfo) {
     // that.log(minfo);
     // 枚举类型,描述显示可用值
     //var avaiableArrStr = m.enum.join(',');
-    if (m.description != null && m.description != undefined && m.description != '') {
-      //minfo.description = m.description + ',可用值:' + avaiableArrStr;
-      minfo.description = m.description + ',' + KUtils.enumAvalibleLabel(that.i18nInstance, m.enum);
-    } else {
-      //minfo.description = '枚举类型,可用值:' + avaiableArrStr;
-      minfo.description = KUtils.enumAvalibleLabel(that.i18nInstance, m.enum);
-    }
+    minfo.description = KUtils.enumAvalibleLabel(that.i18nInstance, m.enum, m.description);
 
   }
   // 判断你是否有默认值(后台)
@@ -5818,14 +5794,7 @@ SwaggerBootstrapUi.prototype.assembleParameterOAS3 = function (m, swpinfo, requi
     minfo.enum = m.enum;
     // that.log(minfo);
     // 枚举类型,描述显示可用值
-    var avaiableArrStr = m.enum.join(',');
-    if (m.description != null && m.description != undefined && m.description != '') {
-      //minfo.description = m.description + ',可用值:' + avaiableArrStr;
-      minfo.description = m.description + ',' + KUtils.enumAvalibleLabel(that.i18nInstance, m.enum);
-    } else {
-      //minfo.description = '枚举类型,可用值:' + avaiableArrStr;
-      minfo.description = '枚举类型,' + KUtils.enumAvalibleLabel(that.i18nInstance, m.enum);
-    }
+    minfo.description = m.description + KUtils.enumAvalibleLabel(that.i18nInstance, m.enum, m.description);
 
   }
   // 判断你是否有默认值(后台)
@@ -5910,14 +5879,7 @@ SwaggerBootstrapUi.prototype.assembleParameterOAS3 = function (m, swpinfo, requi
           // 枚举不为空
           minfo.enum = _enumArray;
           // 枚举类型,描述显示可用值
-          //var avaiableArrStr = _enumArray.join(',');
-          if (m.description != null && m.description != undefined && m.description != '') {
-            //minfo.description = m.description + ',可用值:' + avaiableArrStr;
-            minfo.description = m.description + ',' + KUtils.enumAvalibleLabel(that.i18nInstance, _enumArray);
-          } else {
-            //minfo.description = '枚举类型,可用值:' + avaiableArrStr;
-            minfo.description = KUtils.enumAvalibleLabel(that.i18nInstance, _enumArray);
-          }
+          minfo.description = KUtils.enumAvalibleLabel(that.i18nInstance, _enumArray, m.description);
         }
       }
     } else if (KUtils.checkIsBasicType(schemaType)) {
@@ -5941,13 +5903,7 @@ SwaggerBootstrapUi.prototype.assembleParameterOAS3 = function (m, swpinfo, requi
         minfo.enum = _enumArray;
         // 枚举类型,描述显示可用值
         // var avaiableArrStr = _enumArray.join(',');
-        if (m.description != null && m.description != undefined && m.description != '') {
-          //minfo.description = m.description + ',可用值:' + avaiableArrStr;
-          minfo.description = m.description + ',' + KUtils.enumAvalibleLabel(that.i18nInstance, _enumArray);
-        } else {
-          //minfo.description = '枚举类型,可用值:' + avaiableArrStr;
-          minfo.description = KUtils.enumAvalibleLabel(that.i18nInstance, _enumArray);
-        }
+        minfo.description = KUtils.enumAvalibleLabel(that.i18nInstance, _enumArray, m.description);
       }
       // 3.判断是否包含default默认值
       if (schemaObject.hasOwnProperty('default')) {
