@@ -18,17 +18,20 @@
 package com.github.xiaoymin.knife4j.spring.configuration;
 
 import com.github.xiaoymin.knife4j.core.conf.GlobalConstants;
+import com.github.xiaoymin.knife4j.extend.filter.basic.AbstractSecurityFilter;
 import com.github.xiaoymin.knife4j.extend.filter.basic.JakartaServletSecurityBasicAuthFilter;
 import com.github.xiaoymin.knife4j.spring.extension.Knife4jJakartaOperationCustomizer;
 import com.github.xiaoymin.knife4j.spring.extension.Knife4jOpenApiCustomizer;
 import com.github.xiaoymin.knife4j.spring.filter.JakartaProductionSecurityFilter;
 import com.github.xiaoymin.knife4j.spring.util.EnvironmentUtils;
+import jakarta.servlet.DispatcherType;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springdoc.core.properties.SpringDocConfigProperties;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
@@ -99,7 +102,7 @@ public class Knife4jAutoConfiguration {
     @Bean
     @ConditionalOnMissingBean(JakartaServletSecurityBasicAuthFilter.class)
     @ConditionalOnProperty(name = "knife4j.basic.enable", havingValue = "true")
-    public JakartaServletSecurityBasicAuthFilter securityBasicAuthFilter(Knife4jProperties knife4jProperties) {
+    public FilterRegistrationBean<JakartaServletSecurityBasicAuthFilter> securityBasicAuthFilter(Knife4jProperties knife4jProperties) {
         JakartaServletSecurityBasicAuthFilter authFilter = new JakartaServletSecurityBasicAuthFilter();
         if (knife4jProperties == null) {
             authFilter.setEnableBasicAuth(EnvironmentUtils.resolveBool(environment, "knife4j.basic.enable", Boolean.FALSE));
@@ -118,13 +121,17 @@ public class Knife4jAutoConfiguration {
                 authFilter.addRule(knife4jProperties.getBasic().getInclude());
             }
         }
-        return authFilter;
+        FilterRegistrationBean<JakartaServletSecurityBasicAuthFilter> registration = new FilterRegistrationBean<>();
+        registration.setDispatcherTypes(DispatcherType.REQUEST);
+        registration.setFilter(authFilter);
+        registration.setOrder(AbstractSecurityFilter.SPRING_FILTER_ORDER);
+        return registration;
     }
     
     @Bean
     @ConditionalOnMissingBean(JakartaProductionSecurityFilter.class)
     @ConditionalOnProperty(name = "knife4j.production", havingValue = "true")
-    public JakartaProductionSecurityFilter productionSecurityFilter(Environment environment) {
+    public FilterRegistrationBean<JakartaProductionSecurityFilter> productionSecurityFilter(Environment environment) {
         boolean prod = false;
         JakartaProductionSecurityFilter p = null;
         if (properties == null) {
@@ -139,8 +146,11 @@ public class Knife4jAutoConfiguration {
         } else {
             p = new JakartaProductionSecurityFilter(properties.isProduction());
         }
-        
-        return p;
+        FilterRegistrationBean<JakartaProductionSecurityFilter> registration = new FilterRegistrationBean<>();
+        registration.setDispatcherTypes(DispatcherType.REQUEST);
+        registration.setFilter(p);
+        registration.setOrder(AbstractSecurityFilter.SPRING_FILTER_ORDER - 1);
+        return registration;
     }
     
 }
