@@ -28,6 +28,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springdoc.core.SpringDocConfigProperties;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -105,7 +106,7 @@ public class Knife4jAutoConfiguration {
      */
     @Bean
     @ConditionalOnMissingBean(ServletSecurityBasicAuthFilter.class)
-    @ConditionalOnProperty(name = "knife4j.basic.enable", havingValue = "true")
+    @ConditionalOnExpression("${knife4j.production:false} && ${knife4j.basic.enable:true}")
     public FilterRegistrationBean<ServletSecurityBasicAuthFilter> securityBasicAuthFilter(Knife4jProperties knife4jProperties) {
         ServletSecurityBasicAuthFilter authFilter = new ServletSecurityBasicAuthFilter();
         if (knife4jProperties == null) {
