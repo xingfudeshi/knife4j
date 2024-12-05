@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j</artifactId>
-    <version>4.6.0-SNAPSHOT</version>
+    <version>4.6.0</version>
     <modules>
         <module>knife4j-core</module>
         <module>knife4j-dependencies</module>
@@ -65,7 +65,6 @@
         <knife4j-gson.version>2.11.0</knife4j-gson.version>
 
 
-
         <knife4j-javassist.version>3.30.2-GA</knife4j-javassist.version>
         <knife4j-lombok.version>1.18.36</knife4j-lombok.version>
 
@@ -115,17 +114,17 @@
             <dependency>
                 <groupId>com.github.xingfudeshi</groupId>
                 <artifactId>knife4j-core</artifactId>
-                <version>4.6.0-SNAPSHOT</version>
+                <version>4.6.0</version>
             </dependency>
             <dependency>
                 <groupId>com.github.xingfudeshi</groupId>
                 <artifactId>knife4j-openapi2-ui</artifactId>
-                <version>4.6.0-SNAPSHOT</version>
+                <version>4.6.0</version>
             </dependency>
             <dependency>
                 <groupId>com.github.xingfudeshi</groupId>
                 <artifactId>knife4j-openapi3-ui</artifactId>
-                <version>4.6.0-SNAPSHOT</version>
+                <version>4.6.0</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
             <dependency>
@@ -453,6 +452,15 @@
                                 </goals>
                             </execution>
                         </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <version>0.6.0</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <publishingServerId>central</publishingServerId>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
