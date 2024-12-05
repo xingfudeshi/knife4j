@@ -20,7 +20,7 @@
         <version>2.4.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-aggregation-disk-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>knife4j-aggregation-disk-demo</name>
@@ -37,7 +37,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.xiaoymin</groupId>
+            <groupId>com.github.xingfudeshi</groupId>
             <artifactId>knife4j-aggregation-spring-boot-starter</artifactId>
             <version>2.0.8</version>
         </dependency>

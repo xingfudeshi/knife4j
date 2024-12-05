@@ -11,7 +11,7 @@ No OpenAPI resource found for group: swagger-config
 
 ```xml
 <dependency>
-  <groupId>com.github.xiaoymin</groupId>
+  <groupId>com.github.xingfudeshi</groupId>
   <artifactId>knife4j-openapi3-spring-boot-starter</artifactId>
   <version>4.0.0</version>
 </dependency>

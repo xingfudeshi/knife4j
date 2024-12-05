@@ -51,7 +51,7 @@ swagger-bootstrap-ui 1.9.2 发布了。swagger-bootstrap-ui是 Swagger 的增强
 
 ```
 <dependency>
-   <groupId>com.github.xiaoymin</groupId>
+   <groupId>com.github.xingfudeshi</groupId>
    <artifactId>swagger-bootstrap-ui</artifactId>
    <version>1.9.2</version>
 </dependency>
@@ -79,6 +79,5 @@ Spring Mvc在线demo地址：https://gitee.com/xiaoym/swagger-bootstrap-ui-demo/
 
 - swagger-bootstrap-ui 的详细介绍：[点击查看](https://www.oschina.net/p/swagger-bootstrap-ui)
 - swagger-bootstrap-ui 的下载地址：[点击下载](https://git.oschina.net/xiaoym/swagger-bootstrap-ui/releases)
- 
  
  

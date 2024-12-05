@@ -52,7 +52,7 @@ Swagger-Bootstrap-Ui 1.8.7 主要更新如下：
 
 ```
 <dependency>
-   <groupId>com.github.xiaoymin</groupId>
+   <groupId>com.github.xingfudeshi</groupId>
    <artifactId>swagger-bootstrap-ui</artifactId>
    <version>1.8.7</version>
 </dependency>
@@ -79,7 +79,6 @@ Swagger-Bootstrap-Ui 1.8.7 主要更新如下：
  
  <icp/> 
  comment/> 
- 
  
  
  

@@ -62,7 +62,7 @@ Eureka注册中心以及service-user、order等都非常简单，按照注册中
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.github.xiaoymin</groupId>
+            <groupId>com.github.xingfudeshi</groupId>
             <artifactId>knife4j-aggregation-spring-boot-starter</artifactId>
             <version>2.0.8</version>
         </dependency>

@@ -15,16 +15,16 @@
  */
 
 
-package com.github.xiaoymin.knife4j.utils;
+package com.github.xingfudeshi.knife4j.utils;
 
 import cn.hutool.core.codec.Base64;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.StrUtil;
-import com.github.xiaoymin.knife4j.common.lang.DesktopConstants;
-import com.github.xiaoymin.knife4j.core.conf.GlobalConstants;
-import com.github.xiaoymin.knife4j.datasource.model.config.common.ConfigCommonInfo;
-import com.github.xiaoymin.knife4j.pojo.ContributorInfo;
+import com.github.xingfudeshi.knife4j.common.lang.DesktopConstants;
+import com.github.xingfudeshi.knife4j.core.conf.GlobalConstants;
+import com.github.xingfudeshi.knife4j.datasource.model.config.common.ConfigCommonInfo;
+import com.github.xingfudeshi.knife4j.pojo.ContributorInfo;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;

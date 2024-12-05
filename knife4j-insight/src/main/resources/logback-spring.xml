@@ -23,7 +23,7 @@
         <!-- 生产上不输出stdout log -->
     </root>
 
-    <logger name="com.github.xiaoymin" level="DEBUG">
+    <logger name="com.github.xingfudeshi" level="DEBUG">
         <appender-ref ref="STDOUT"/>
     </logger>
 

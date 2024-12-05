@@ -8,7 +8,7 @@
         <version>3.0.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-insight</artifactId>
     <version>2.0</version>
     <name>knife4j-insight</name>
@@ -176,7 +176,7 @@
                 </executions>-->
                 <configuration>
                     <imageName>knife4j</imageName>
-                    <mainClass>com.github.xiaoymin.knife4j.Knife4jInsightApplication</mainClass>
+                    <mainClass>com.github.xingfudeshi.knife4j.Knife4jInsightApplication</mainClass>
                     <skipNativeTests>true</skipNativeTests>
                 </configuration>
             </plugin>

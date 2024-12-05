@@ -51,7 +51,7 @@ swagger-bootstrap-ui 1.9.3 发布了。swagger-bootstrap-ui是 Swagger 的增强
 
 ```
 <dependency>
-   <groupId>com.github.xiaoymin</groupId>
+   <groupId>com.github.xingfudeshi</groupId>
    <artifactId>swagger-bootstrap-ui</artifactId>
    <version>1.9.3</version>
 </dependency>
@@ -67,6 +67,5 @@ swagger-bootstrap-ui 1.9.3 发布了。swagger-bootstrap-ui是 Swagger 的增强
 
 ![](/knife4j/images/blog/swagger-bootstrap-ui-1.9.3-issue/us.png)
 
- 
  
  

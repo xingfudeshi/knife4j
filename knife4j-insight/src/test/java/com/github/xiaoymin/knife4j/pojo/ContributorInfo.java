@@ -15,7 +15,7 @@
  */
 
 
-package com.github.xiaoymin.knife4j.pojo;
+package com.github.xingfudeshi.knife4j.pojo;
 
 import lombok.Data;
 

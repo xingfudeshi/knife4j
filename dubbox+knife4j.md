@@ -12,12 +12,12 @@ swagger正好有对jaxrs提供支持，所以我们引入桥接包`swagger-jaxrs
 
 ```xml
     <dependency>
-        <groupId>com.github.xiaoymin</groupId>
+        <groupId>com.github.xingfudeshi</groupId>
         <artifactId>knife4j-spring</artifactId>
         <version>2.0.9</version>
     </dependency>
     <dependency>
-        <groupId>com.github.xiaoymin</groupId>
+        <groupId>com.github.xingfudeshi</groupId>
         <artifactId>knife4j-spring-ui</artifactId>
         <version>2.0.9</version>
     </dependency>
@@ -189,7 +189,7 @@ spring-restful-service.xml
 
 ```xml
     <dependency>
-    	<groupId>com.github.xiaoymin</groupId>
+    	<groupId>com.github.xingfudeshi</groupId>
     	<artifactId>knife4j-aggregation-spring-boot-starter</artifactId>
     	<version>2.0.9</version>
     </dependency>

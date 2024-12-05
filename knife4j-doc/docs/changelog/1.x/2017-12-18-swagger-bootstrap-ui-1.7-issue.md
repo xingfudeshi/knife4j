@@ -67,7 +67,7 @@ public class SwaggerConfiguration {
 
 ```xml
 <dependency>
-   <groupId>com.github.xiaoymin</groupId>
+   <groupId>com.github.xingfudeshi</groupId>
    <artifactId>swagger-bootstrap-ui</artifactId>
    <version>1.7</version>
 </dependency>
@@ -77,6 +77,5 @@ public class SwaggerConfiguration {
 
 - swagger-bootstrap-ui 的详细介绍：[点击查看](https://www.oschina.net/p/swagger-bootstrap-ui)
 - swagger-bootstrap-ui 的下载地址：[点击下载](https://git.oschina.net/xiaoym/swagger-bootstrap-ui/releases)
- 
  
  

@@ -1,6 +1,6 @@
 # SwaggerBootstrapUi
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.xiaoymin/swagger-bootstrap-ui/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.xiaoymin/swagger-bootstrap-ui)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.xingfudeshi/swagger-bootstrap-ui/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.xingfudeshi/swagger-bootstrap-ui)
 
 ## 项目说明
 
@@ -70,7 +70,7 @@
 
 ```xml
 <dependency>
-  <groupId>com.github.xiaoymin</groupId>
+  <groupId>com.github.xingfudeshi</groupId>
   <artifactId>swagger-bootstrap-ui</artifactId>
   <version>${lastVersion}</version>
 </dependency>

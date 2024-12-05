@@ -63,7 +63,7 @@ public class Knife4jConfiguration {
                 .groupName("用户服务")
                 .select()
                 //这里指定Controller扫描包路径
-                .apis(RequestHandlerSelectors.basePackage("com.github.xiaoymin.knife4j.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.github.xingfudeshi.knife4j.controller"))
                 .paths(PathSelectors.any())
                 .build();
         return docket;
@@ -73,7 +73,7 @@ public class Knife4jConfiguration {
 
 const mavenDependency = `<!--引入Knife4j的官方start包,该指南选择Spring Boot版本<3.0,开发者需要注意-->
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
     <version>4.4.0</version>
 </dependency>
@@ -99,7 +99,7 @@ function ActorExample() {
                 <h2>快速开始(Spring Boot 2 + OpenAPI2)</h2>
 
                 <p>不同规范以及Spring Boot3 OpenAPI3的使用请移步<a href='docs/quick-start'>详细文档</a></p>
-                <p>第一步：<a href='https://spring.io/guides/gs/spring-boot/'>创建Spring Boot项目</a>并且在pom.xml中引入<a href='https://search.maven.org/search?q=g:com.github.xiaoymin'>Knife4j的依赖包</a>，代码如下：</p>
+                <p>第一步：<a href='https://spring.io/guides/gs/spring-boot/'>创建Spring Boot项目</a>并且在pom.xml中引入<a href='https://search.maven.org/search?q=g:com.github.xingfudeshi'>Knife4j的依赖包</a>，代码如下：</p>
                 <CodeBlock className="language-xml">
                     {mavenDependency}
 

@@ -39,7 +39,7 @@
   FAQ
 </a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="增强模式"><a href="#增强模式" class="header-anchor">#</a> 增强模式</h1> <p>Knife4j自2.0.6版本开始,将目前在Ui界面中一些个性化配置剥离,开发者可以在后端进行配置，并且提供的knife4j-spring-boot-strater组件自动装载</p> <p>spring.factories配置如下：</p> <div class="language-properties extra-class"><pre class="language-properties"><code><span class="token comment"># Auto Configure</span>
 <span class="token attr-name">org.springframework.boot.autoconfigure.EnableAutoConfiguration</span><span class="token punctuation">=</span><span class="token attr-value">\
-com.github.xiaoymin.knife4j.spring.configuration.Knife4jAutoConfiguration</span>
+com.github.xingfudeshi.knife4j.spring.configuration.Knife4jAutoConfiguration</span>
 
 </code></pre></div><p>在Spring Boot配置文件中,完整的配置如下:</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">knife4j</span><span class="token punctuation">:</span>
   <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>

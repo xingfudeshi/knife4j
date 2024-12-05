@@ -35,7 +35,7 @@ knife4j的前身是`swagger-bootstrap-ui`，为了契合微服务的架构发展
 
 ```xml
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>swagger-bootstrap-ui</artifactId>
     <version>1.9.6</version>
 </dependency>
@@ -45,7 +45,7 @@ knife4j的前身是`swagger-bootstrap-ui`，为了契合微服务的架构发展
 
 ```xml
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-openapi2-ui</artifactId>
     <version>${lastVersion}</version>
 </dependency>
@@ -57,7 +57,7 @@ knife4j的前身是`swagger-bootstrap-ui`，为了契合微服务的架构发展
 
 ```xml
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
     <version>${knife4j.version}</version>
 </dependency>

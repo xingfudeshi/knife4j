@@ -57,7 +57,7 @@ Maven坐标：
 
 ```xml
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
     <version>4.0.0</version>
 </dependency>
@@ -70,7 +70,7 @@ Maven坐标：
 
 ```xml
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-openapi2-ui</artifactId>
     <version>4.0.0</version>
 </dependency>
@@ -91,7 +91,7 @@ Maven坐标如下：
 
 ```xml
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-openapi3-spring-boot-starter</artifactId>
     <version>4.0.0</version>
 </dependency>
@@ -109,7 +109,7 @@ Maven坐标如下：
 
 ```xml
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
     <version>4.0.0</version>
 </dependency>
@@ -124,7 +124,7 @@ Maven坐标如下：
 
 ```xml
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-gateway-spring-boot-starter</artifactId>
     <version>4.0.0</version>
 </dependency>

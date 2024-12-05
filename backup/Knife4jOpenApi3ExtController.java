@@ -5,12 +5,12 @@
  * Developer Web Site: http://open.xiaominfo.com.
  */
 
-package com.github.xiaoymin.knife4j.spring.web;
+package com.github.xingfudeshi.knife4j.spring.web;
 
-import com.github.xiaoymin.knife4j.annotations.ApiOperationSort;
-import com.github.xiaoymin.knife4j.annotations.ApiSort;
-import com.github.xiaoymin.knife4j.annotations.ApiSupport;
-import com.github.xiaoymin.knife4j.spring.model.*;
+import com.github.xingfudeshi.knife4j.annotations.ApiOperationSort;
+import com.github.xingfudeshi.knife4j.annotations.ApiSort;
+import com.github.xingfudeshi.knife4j.annotations.ApiSupport;
+import com.github.xingfudeshi.knife4j.spring.model.*;
 import com.google.common.base.Function;
 import com.google.common.collect.Lists;
 import io.swagger.annotations.Api;

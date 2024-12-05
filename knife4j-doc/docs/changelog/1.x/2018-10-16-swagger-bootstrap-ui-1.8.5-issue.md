@@ -96,7 +96,7 @@ c、所以排序的取值规则是：position>@ApiOperationSort
 
 ```
 <dependency>
-   <groupId>com.github.xiaoymin</groupId>
+   <groupId>com.github.xingfudeshi</groupId>
    <artifactId>swagger-bootstrap-ui</artifactId>
    <version>1.8.5</version>
 </dependency>
@@ -118,6 +118,5 @@ c、所以排序的取值规则是：position>@ApiOperationSort
 
 - swagger-bootstrap-ui 的详细介绍：[点击查看](https://www.oschina.net/p/swagger-bootstrap-ui)
 - swagger-bootstrap-ui 的下载地址：[点击下载](https://git.oschina.net/xiaoym/swagger-bootstrap-ui/releases)
- 
  
  

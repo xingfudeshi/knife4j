@@ -15,7 +15,7 @@
 
 ```xml
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-gateway-spring-boot-starter</artifactId>
     <version>${最新版本}</version>
 </dependency>

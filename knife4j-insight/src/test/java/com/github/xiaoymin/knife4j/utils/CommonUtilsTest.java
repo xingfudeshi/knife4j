@@ -15,11 +15,11 @@
  */
 
 
-package com.github.xiaoymin.knife4j.utils;
+package com.github.xingfudeshi.knife4j.utils;
 
 import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.lang.Assert;
-import com.github.xiaoymin.knife4j.common.utils.CommonUtils;
+import com.github.xingfudeshi.knife4j.common.utils.CommonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.io.ClassPathResource;

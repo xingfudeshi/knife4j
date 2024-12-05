@@ -16,13 +16,13 @@ demo参考示例地址：[knife4j-spring-mvc-demo](https://gitee.com/xiaoym/swag
 ```xml
 <!--引入Knife4j-->
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-spring</artifactId>
     <!--在引用时请在maven中央仓库搜索最新版本号-->
     <version>2.0.4</version>
 </dependency>
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-spring-ui</artifactId>
     <!--在引用时请在maven中央仓库搜索最新版本号-->
     <version>2.0.4</version>
@@ -36,7 +36,7 @@ demo参考示例地址：[knife4j-spring-mvc-demo](https://gitee.com/xiaoym/swag
 ```xml
 <!--引入Knife4j-->
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-spring-mvc</artifactId>
     <!--在引用时请在maven中央仓库搜索最新版本号，如果不存在则代表尚未发布,作者正在努力开发中-->
     <version>2.0.5</version>
@@ -98,7 +98,7 @@ public class SwaggerConfiguration {
 <!--生产环境Filter-->
 <filter>
     <filter-name>knife4jProductionFilter</filter-name>
-    <filter-class>com.github.xiaoymin.knife4j.spring.filter.ProductionSecurityFilter</filter-class>
+    <filter-class>com.github.xingfudeshi.knife4j.spring.filter.ProductionSecurityFilter</filter-class>
     <init-param>
         <param-name>production</param-name>
         <!--如果该值配置为true则代表开启-->
@@ -112,7 +112,7 @@ public class SwaggerConfiguration {
 <!--Swagger资源的Basic认证保护策略-->
 <filter>
     <filter-name>knife4jSecurityBasic</filter-name>
-    <filter-class>com.github.xiaoymin.knife4j.spring.filter.SecurityBasicAuthFilter</filter-class>
+    <filter-class>com.github.xingfudeshi.knife4j.spring.filter.SecurityBasicAuthFilter</filter-class>
     <!--开启basic认证-->
     <init-param>
         <param-name>enableBasicAuth</param-name>
@@ -193,8 +193,8 @@ public class SwaggerConfiguration {
 //增强扫描
 @ComponentScan(
         basePackages = {
-                "com.github.xiaoymin.knife4j.spring.plugin",
-                "com.github.xiaoymin.knife4j.spring.web"
+                "com.github.xingfudeshi.knife4j.spring.plugin",
+                "com.github.xingfudeshi.knife4j.spring.web"
         }
 )
 public class SwaggerConfiguration {

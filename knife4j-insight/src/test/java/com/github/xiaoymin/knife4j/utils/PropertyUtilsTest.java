@@ -15,15 +15,15 @@
  */
 
 
-package com.github.xiaoymin.knife4j.utils;
+package com.github.xingfudeshi.knife4j.utils;
 
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.lang.Assert;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.xiaoymin.knife4j.common.utils.PropertyUtils;
-import com.github.xiaoymin.knife4j.datasource.model.config.meta.disk.DiskConfigProfileProps;
+import com.github.xingfudeshi.knife4j.common.utils.PropertyUtils;
+import com.github.xingfudeshi.knife4j.datasource.model.config.meta.disk.DiskConfigProfileProps;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.io.ClassPathResource;

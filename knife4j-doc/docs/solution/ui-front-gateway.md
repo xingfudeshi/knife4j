@@ -81,7 +81,7 @@ public class ServiceServerApplication {
     <scope>test</scope>
 </dependency>
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-micro-spring-boot-starter</artifactId>
 </dependency>
 ```
@@ -173,7 +173,7 @@ public class ServiceUserApplication {
     <artifactId>spring-cloud-starter-gateway</artifactId>
 </dependency>
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-spring-boot-starter</artifactId>
 </dependency>
 ```
@@ -186,7 +186,7 @@ public class ServiceUserApplication {
 
 ```xml
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-spring-ui</artifactId>
 </dependency>
 ```
@@ -413,6 +413,5 @@ spring:
 ```
 
 
- 
  
  

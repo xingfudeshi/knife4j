@@ -38,7 +38,7 @@ swagger-bootstrap-ui 1.8.1 主要更新如下：
 
 ```xml
 <dependency>
-   <groupId>com.github.xiaoymin</groupId>
+   <groupId>com.github.xingfudeshi</groupId>
    <artifactId>swagger-bootstrap-ui</artifactId>
    <version>1.8.1</version>
 </dependency>
@@ -55,6 +55,5 @@ swagger-bootstrap-ui 1.8.1 主要更新如下：
 
 - swagger-bootstrap-ui 的详细介绍：[点击查看](https://www.oschina.net/p/swagger-bootstrap-ui)
 - swagger-bootstrap-ui 的下载地址：[点击下载](https://git.oschina.net/xiaoym/swagger-bootstrap-ui/releases)
- 
  
  

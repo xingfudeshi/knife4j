@@ -4,7 +4,7 @@ swagger-bootstrap-ui 1.5 发布了。swagger-bootstrap-ui 是 Swagger 的前端 
 
 本次更新：
 
-    1、修改groupid为com.github.xiaoymin
+    1、修改groupid为com.github.xingfudeshi
 
     2、新增layer弹框,增加接口表单验证功能,针对required=true的字段
 
@@ -19,7 +19,7 @@ swagger-bootstrap-ui 1.5 发布了。swagger-bootstrap-ui 是 Swagger 的前端 
 **Maven坐标**
 ```xml
 <dependency>
-   <groupId>com.github.xiaoymin</groupId>
+   <groupId>com.github.xingfudeshi</groupId>
    <artifactId>swagger-bootstrap-ui</artifactId>
    <version>1.5</version>
 </dependency>
@@ -29,6 +29,5 @@ swagger-bootstrap-ui 1.5 发布了。swagger-bootstrap-ui 是 Swagger 的前端 
 
 - swagger-bootstrap-ui 的详细介绍：[点击查看](https://www.oschina.net/p/swagger-bootstrap-ui)
 - swagger-bootstrap-ui 的下载地址：[点击下载](https://git.oschina.net/xiaoym/swagger-bootstrap-ui/releases)
- 
  
  

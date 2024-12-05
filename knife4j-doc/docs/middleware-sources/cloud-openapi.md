@@ -50,7 +50,7 @@ Knife4jCloud平台对外提供注册Swagger服务的开放API接口,通过该接
 
 ```xml
 <dependency>
-    <groupId>com.github.xiaoymin</groupId>
+    <groupId>com.github.xingfudeshi</groupId>
     <artifactId>knife4j-discovery-spring-boot-starter</artifactId>
     <!--在引用时请在maven中央仓库(http://search.maven.org)搜索最新版本号-->
     <!-- 该版本必须和Knife4jCloud主版本一致-->

@@ -12,7 +12,7 @@
 <dependencyManagement>
     <dependencies>
         <dependency>
-            <groupId>com.github.xiaoymin</groupId>
+            <groupId>com.github.xingfudeshi</groupId>
             <artifactId>knife4j-dependencies</artifactId>
             <!--在引用时请在maven中央仓库搜索2.X最新版本号-->
             <version>2.0.9</version>
@@ -32,12 +32,11 @@
 ```xml
 <dependencies>
     <dependency>
-        <groupId>com.github.xiaoymin</groupId>
+        <groupId>com.github.xingfudeshi</groupId>
         <artifactId>knife4j-spring-boot-starter</artifactId>
     </dependency>
 </dependencies>
 ```
 
- 
  
  

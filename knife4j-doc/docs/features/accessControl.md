@@ -104,7 +104,7 @@ admin/123321
   <!--生产环境Filter-->
   <filter>
     <filter-name>swaggerProductionFilter</filter-name>
-    <filter-class>com.github.xiaoymin.knife4j.spring.filter.ProductionSecurityFilter</filter-class>
+    <filter-class>com.github.xingfudeshi.knife4j.spring.filter.ProductionSecurityFilter</filter-class>
     <init-param>
       <param-name>production</param-name>
       <param-value>false</param-value>
@@ -117,7 +117,7 @@ admin/123321
   <!--Swagger资源的Basic认证保护策略-->
   <filter>
     <filter-name>swaggerSecurityBasic</filter-name>
-    <filter-class>com.github.xiaoymin.knife4j.spring.filter.SecurityBasicAuthFilter</filter-class>
+    <filter-class>com.github.xingfudeshi.knife4j.spring.filter.SecurityBasicAuthFilter</filter-class>
     <!--开启basic认证-->
     <init-param>
       <param-name>enableBasicAuth</param-name>

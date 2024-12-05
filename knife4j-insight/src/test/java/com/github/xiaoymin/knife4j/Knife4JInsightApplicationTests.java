@@ -15,7 +15,7 @@
  */
 
 
-package com.github.xiaoymin.knife4j;
+package com.github.xingfudeshi.knife4j;
 
 import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.lang.Assert;
@@ -25,9 +25,9 @@ import com.alibaba.nacos.api.config.ConfigService;
 import com.alibaba.nacos.api.exception.NacosException;
 import com.alibaba.nacos.api.naming.NamingService;
 import com.alibaba.nacos.api.naming.pojo.Instance;
-import com.github.xiaoymin.knife4j.common.lang.DesktopConstants;
-import com.github.xiaoymin.knife4j.common.utils.PropertyUtils;
-import com.github.xiaoymin.knife4j.datasource.model.config.meta.nacos.NacosConfigProfileProps;
+import com.github.xingfudeshi.knife4j.common.lang.DesktopConstants;
+import com.github.xingfudeshi.knife4j.common.utils.PropertyUtils;
+import com.github.xingfudeshi.knife4j.datasource.model.config.meta.nacos.NacosConfigProfileProps;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

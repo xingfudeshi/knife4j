@@ -28,7 +28,7 @@ swagger-bootstrap-ui 1.9.6 发布了。swagger-bootstrap-ui是 Swagger 的增强
 
 swagger-bootstrap-ui的所有特性都会集中在`knife4j-spring-ui`包中,并且后续也会满足开发者更多的个性化需求.
 
-主要的变化是,项目的相关类包路径更换为`com.github.xiaoymin.knife4j`前缀,开发者使用增强注解时需要替换包路径
+主要的变化是,项目的相关类包路径更换为`com.github.xingfudeshi.knife4j`前缀,开发者使用增强注解时需要替换包路径
 
 后端Java代码和ui包分离为多个模块的jar包,以面对在目前微服务架构下,更加方便的使用增强文档注解(使用SpringCloud微服务项目,只需要在网关层集成UI的jar包即可,因此分离前后端)
 
@@ -68,7 +68,7 @@ swagger-bootstrap-ui的所有特性都会集中在`knife4j-spring-ui`包中,并�
 
 ```
 <dependency>
-   <groupId>com.github.xiaoymin</groupId>
+   <groupId>com.github.xingfudeshi</groupId>
    <artifactId>swagger-bootstrap-ui</artifactId>
    <version>1.9.6</version>
 </dependency>
@@ -86,6 +86,5 @@ swagger-bootstrap-ui的所有特性都会集中在`knife4j-spring-ui`包中,并�
 
 ![](https://foruda.gitee.com/images/1660437790142497676/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
 
- 
  
  
